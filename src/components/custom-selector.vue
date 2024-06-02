@@ -3,7 +3,7 @@
     <div class="selector__name">{{ name }}</div>
     <div class="selector__select select" @click="openItems=!openItems">
       <div class="select__name">{{ selectValue.name }}</div>
-      <img src="@/src/assets/icons/chevron.svg" alt=""
+      <img src="/icons/chevron.svg" alt=""
            :style="{ transform: openItems ? 'rotate(180deg)' : 'rotate(0deg)' }"/>
     </div>
     <div class="selector__dropdown dropdown" v-show="openItems">

@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+    ssr: false,
     devtools: {enabled: true},
     build: {
         transpile: ['vuex']
@@ -18,6 +19,6 @@ export default defineNuxtConfig({
     },
     app: {
         baseURL: '/TAGES/',
-        buildAssetsDir: 'src'
+        buildAssetsDir: 'assets'
     }
 })

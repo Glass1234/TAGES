@@ -2,7 +2,7 @@
   <div class="item font-SF_UI">
     <div class="item__content content">
       <client-only>
-        <img :src="getImageUrl(`../assets${item.image.url}`)"
+        <img :src="getImageUrl(`/TAGES/${item.image.url}`)"
              :alt="item.name" class="content__img">
       </client-only>
       <div class="info">
@@ -20,7 +20,7 @@
                   :alt="item.isBasket ? 'remove basket':'add basket'">
             </button>
             <button @click="addAndRemoveFavorite(item)">
-              <img :src="getImageUrl(item.isFavorite ? '../assets/icons/heartRed.svg': '../assets/icons/heart.svg')"
+              <img :src="getImageUrl(item.isFavorite ? '/TAGES/icons/heartRed.svg': '/TAGES/icons/heart.svg')"
                    :alt="item.isFavorite ? 'remove favorite':'add favorite'">
             </button>
           </div>
