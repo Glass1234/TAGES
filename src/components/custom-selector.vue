@@ -16,25 +16,28 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
-  name: {
-    type: String,
-    required: true
-  },
-  items: {
-    type: Array,
-    required: true
-  },
-});
+import type {PropType} from "vue";
 
 interface Item {
   id: any;
   name: string;
 }
 
+const props = defineProps({
+  name: {
+    type: String,
+    required: true
+  },
+  items: {
+    type: Array as PropType<Item[]>,
+    required: true
+  },
+});
+
+
 const emit = defineEmits(['updateSelect']);
 const openItems = ref(false);
-const selectValue = reactive({});
+const selectValue = reactive<Partial<Item>>({});
 
 const isSelectValue = (item: Item) => {
   return selectValue.id !== item.id;

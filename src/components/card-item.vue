@@ -16,7 +16,7 @@
           <div class="nav__buttons">
             <button @click="addAndRemoveBasket(item)">
               <img
-                  :src="getImageUrl(item.isBasket ? '../assets/icons/circle-checked.svg': '../assets/icons/basket.svg')"
+                  :src="getImageUrl(item.isBasket ? '/TAGES/icons/circle-checked.svg': '/TAGES/icons/basket.svg')"
                   :alt="item.isBasket ? 'remove basket':'add basket'">
             </button>
             <button @click="addAndRemoveFavorite(item)">
