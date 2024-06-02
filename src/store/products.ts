@@ -27,8 +27,8 @@ const store = createStore({
         },
         setItems(state) {
             const tmp = items;
-            const favoriteArr = JSON.parse(localStorage.getItem('favoriteArr'))
-            const basketArr = JSON.parse(localStorage.getItem('basketArr'))
+            const favoriteArr = JSON.parse(localStorage.getItem('favoriteArr')) || []
+            const basketArr = JSON.parse(localStorage.getItem('basketArr')) || []
             state.items = tmp.map(item => ({
                 ...item,
                 isFavorite: favoriteArr.some(fav => fav.id === item.id),

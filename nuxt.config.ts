@@ -16,4 +16,8 @@ export default defineNuxtConfig({
             }
         },
     },
+    app: {
+        baseURL: '/TAGES/',
+        buildAssetsDir: 'src'
+    }
 })
