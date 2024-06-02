@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'SF_UI';
+    src: url('./sfuitext_light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF_UI';
+    src: url('./sfuitext_lightitalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
